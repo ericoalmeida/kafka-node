@@ -34,5 +34,5 @@
 
 ### Configuração
 
-[Gateway](../gateway/README.md)
-[Rewards Engine](../rewards/README.md)
+[Gateway](https://github.com/ericoalmeida/kafka-node/blob/master/gateway/README.md)
+[Rewards Engine](https://github.com/ericoalmeida/kafka-node/blob/master/rewards/README.md)
