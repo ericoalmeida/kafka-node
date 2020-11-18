@@ -8,6 +8,7 @@ const kafka = new Kafka({
 const topic = 'rewards-cashback'; //Topico para o consumer se conectar
 const consumer = kafka.consumer({groupId: 'rewards-group'});
 
+
 //Process received messages
 (async () => {
   await consumer.connect();
@@ -17,6 +18,7 @@ const consumer = kafka.consumer({groupId: 'rewards-group'});
       const prefix = `${topic}[${partition} | ${message.offset}] / ${message.timestamp}`;
 
       //show message on log
+      //Here implement way to process the message
       console.log(`- ${prefix} ${message.key}#${message.value}`);
     }
   });
